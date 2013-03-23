@@ -1,4 +1,4 @@
-node 'basenode' {
+node 'base' {
   include epel
   include atomic
   include repoforge
