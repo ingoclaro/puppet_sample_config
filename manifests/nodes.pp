@@ -33,7 +33,7 @@ node 'basenode' {
 
 }
 
-node 'puppet' inherits basenode {
+node 'puppet' {
   class { 'apache':
     default_mods => false,
   }
