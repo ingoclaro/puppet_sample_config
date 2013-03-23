@@ -1,2 +1,5 @@
 classes:
   - base
+  - epel
+  - atomic
+  - repoforge

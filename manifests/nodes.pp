@@ -1,8 +1,4 @@
 class base {
-  include epel
-  include atomic
-  include repoforge
-
   file { '/etc/hosts':
     ensure => present,
     content => '',
