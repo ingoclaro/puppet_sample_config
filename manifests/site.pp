@@ -1,5 +1,7 @@
 import 'nodes'
 
+hiera_include('classes')
+
 filebucket { main: server => puppet }
 
 # global defaults
