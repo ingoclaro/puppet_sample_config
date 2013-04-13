@@ -20,6 +20,8 @@ class apache (
 ) {
   include apache::params
 
+  $config = hiera_hash('apache')
+
   package { 'httpd':
     ensure => installed,
     name   => $apache::params::apache_name,
@@ -56,7 +58,7 @@ class apache (
       notify  => Service['httpd'],
       require => Package['httpd'],
     }
-    if $default_mods == true {
+    if $config['default_mods'] == true {
       include apache::mod::default
     }
   }

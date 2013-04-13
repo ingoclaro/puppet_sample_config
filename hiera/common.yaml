@@ -3,3 +3,7 @@ classes:
   - epel
   - atomic
   - repoforge
+
+apache:
+  default_mods: false
+
